@@ -1,0 +1,195 @@
+/* Error Page Specific Styles */
+
+/* Error Container */
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 2rem 0;
+}
+
+.error-content {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Error Icon */
+.error-icon-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.error-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: hsla(var(--warning), 0.1);
+    border: 3px solid var(--warning);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warning);
+    margin: 0 auto;
+    position: relative;
+    animation: pulse-warning 2s infinite;
+}
+
+.icon-large {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.security-badge {
+    position: absolute;
+    bottom: -0.5rem;
+    right: -0.5rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--destructive);
+    border: 2px solid var(--background);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.badge-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+@keyframes pulse-warning {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 hsla(var(--warning), 0.4);
+    }
+
+    50% {
+        box-shadow: 0 0 0 10px hsla(var(--warning), 0);
+    }
+}
+
+/* Error Message */
+.error-message {
+    margin-bottom: 2rem;
+}
+
+.error-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.error-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--warning);
+    margin-bottom: 1.5rem;
+}
+
+.error-description {
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.description-main {
+    font-size: 1rem;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.description-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    text-align: left;
+}
+
+.detail-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 0.125rem;
+}
+
+.detail-item span {
+    font-size: 0.875rem;
+    color: var(--card-foreground);
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (min-width: 640px) {
+    .error-title {
+        font-size: 2.5rem;
+    }
+
+    .error-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .error-content {
+        padding: 3rem;
+    }
+
+    .description-main {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .error-container {
+        min-height: 80vh;
+    }
+
+    .error-content {
+        max-width: 700px;
+    }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .error-icon {
+        border-width: 4px;
+    }
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .error-icon {
+        background-color: hsla(45, 93%, 47%, 0.1);
+    }
+}
+
+/* Print styles */
+@media print {
+    .error-icon-container {
+        animation: none;
+    }
+}
+
+/* Accessibility enhancements */
+.back-link:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}

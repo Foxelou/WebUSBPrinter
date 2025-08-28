@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accès restreint - Centre d'Impression & Scan</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/forms.css">
+    <link rel="stylesheet" href="styles/history-disabled.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <div class="dashboard-content">
+            <!-- Header -->
+            <header class="page-header">
+                <div class="header-navigation">
+                    <a href="index" class="back-link">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H6m6-7-7 7 7 7"/>
+                        </svg>
+                        Retour au dashboard
+                    </a>
+                </div>
+            </header>
+
+            <!-- Error Content -->
+            <div class="error-container">
+                <div class="error-content">
+                    
+                    <!-- Error Icon -->
+                    <div class="error-icon-container">
+                        <div class="error-icon">
+                            <svg class="icon-large" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 7v6"/>
+                                <circle cx="12" cy="18" r="1"/>
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                            </svg>
+                        </div>
+                        <div class="security-badge">
+                            <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <circle cx="12" cy="16" r="1"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div class="error-message">
+                        <h1 class="error-title">Fonctionnalité non disponible</h1>
+                        <h2 class="error-subtitle">Accès à l'historique restreint</h2>
+                        <div class="error-description">
+                            <p class="description-main">
+                                L'accès aux historiques des impressions et scans a été désactivé par l'administrateur système pour des raisons de sécurité et de confidentialité.
+                            </p>
+                            <div class="description-details">
+                                <div class="detail-item">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4"/>
+                                        <circle cx="12" cy="12" r="9"/>
+                                    </svg>
+                                    <span>Cette restriction protège la confidentialité des documents</span>
+                                </div>
+                                <div class="detail-item">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4"/>
+                                        <circle cx="12" cy="12" r="9"/>
+                                    </svg>
+                                    <span>Les fonctions d'impression et de scan restent disponibles</span>
+                                </div>
+                                <div class="detail-item">
+                                    <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9 12l2 2 4-4"/>
+                                        <circle cx="12" cy="12" r="9"/>
+                                    </svg>
+                                    <span>Contactez votre administrateur pour plus d'informations</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

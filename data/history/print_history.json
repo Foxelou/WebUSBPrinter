@@ -1,0 +1,17 @@
+[
+    {
+        "timestamp": "2000-01-01 00:00:00",
+        "file": "2000-01-01_00-00-00_exemple-blank.pdf",
+        "status": "success",
+        "settings": {
+            "printer": "MyPrinter",
+            "color": "color",
+            "duplex": "simplex",
+            "orient": "portrait",
+            "paper": "A4",
+            "customPages": "",
+            "pagePreset": "all",
+            "copies": 1
+        }
+    }
+]

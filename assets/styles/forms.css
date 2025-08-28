@@ -1,0 +1,440 @@
+/* Layout */
+.page-container {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.page-content {
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+/* Header */
+.page-header {
+    margin-bottom: 1.5rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    transition: color 0.15s ease-in-out;
+}
+
+.back-link:hover {
+    color: hsla(214, 100%, 47%, 0.8);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-icon {
+    margin: 0 auto 1rem;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--primary);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icon.scan {
+    background-color: var(--accent);
+}
+
+.page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+    margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+    color: var(--muted-foreground);
+}
+
+/* Card */
+.form-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+/* Form */
+.print-form {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--card-foreground);
+}
+
+.form-input,
+.form-select {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--background);
+    border: 1px solid var(--input);
+    border-radius: 0.5rem;
+    color: var(--card-foreground);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-input:focus,
+.form-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--ring);
+    border-color: transparent;
+}
+
+.form-input::placeholder {
+    color: var(--muted-foreground);
+}
+
+.form-input.number-input {
+    width: 8rem;
+}
+
+/* File Upload */
+.file-upload-container {
+    position: relative;
+}
+
+.file-input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-area {
+    border: 2px dashed var(--border);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.file-upload-area:hover {
+    border-color: var(--primary);
+}
+
+.file-upload-icon {
+    width: 2rem;
+    height: 2rem;
+    color: var(--muted-foreground);
+    margin: 0 auto 0.5rem;
+}
+
+.file-upload-text {
+    font-size: 0.875rem;
+}
+
+.file-selected {
+    color: var(--card-foreground);
+    font-weight: 500;
+}
+
+.file-placeholder {
+    color: var(--muted-foreground);
+    display: block;
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Custom Pages Input */
+.custom-pages-input {
+    display: none;
+}
+
+.custom-pages-input.show {
+    display: block;
+}
+
+/* Submit Section */
+.form-submit {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
+.form-submit a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.submit-button {
+    width: 100%;
+    padding: 0.75rem 2rem;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: hsla(214, 100%, 47%, 0.9);
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
+}
+
+/* Quick Actions */
+.quick-actions {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.quick-action-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.quick-action-secondary {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+}
+
+.quick-action-secondary:hover {
+    background-color: hsla(220, 13%, 91%, 0.8);
+}
+
+.quick-action-accent {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+.quick-action-accent:hover {
+    background-color: hsla(142, 76%, 36%, 0.8);
+}
+
+/* Icons */
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon-large {
+    width: 2rem;
+    height: 2rem;
+}
+
+.icon-white {
+    color: var(--primary-foreground);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .page-container {
+        padding: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 1.875rem;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-input.number-input {
+        width: 8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .page-container {
+        padding: 2rem;
+    }
+}
+
+/* Accessibility */
+.quick-action-link:focus,
+.back-link:focus {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+    .form-card {
+        border-width: 2px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Additions pour la page de scan */
+
+/* Header icon pour le scan */
+.header-icon-scan {
+    background-color: var(--accent);
+}
+
+/* Submit button pour le scan */
+.submit-button-scan {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+.submit-button-scan:hover {
+    background-color: hsla(142, 76%, 36%, 0.9);
+}
+
+.submit-button-scan:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--accent);
+}
+
+/* Quick action primary (pour le bouton imprimer depuis la page scan) */
+.quick-action-primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.quick-action-primary:hover {
+    background-color: hsla(214, 100%, 47%, 0.8);
+}
+
+/* Form help text */
+.form-help {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin-top: 0.25rem;
+}
+
+/* Generate filename button */
+.generate-filename-btn {
+    background-color: var(--secondary);
+    border: 1px solid var(--border);
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.15s ease-in-out;
+    min-width: 2.5rem;
+    height: 2.5rem;
+}
+
+.generate-filename-btn:hover {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+.generate-filename-btn .icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Validation styles */
+.input-valid {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
+}
+
+.input-invalid {
+    border-color: var(--destructive);
+    box-shadow: 0 0 0 1px var(--destructive);
+}
+
+.validation-message {
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.validation-message.error {
+    color: var(--destructive);
+}
+
+.validation-message.success {
+    color: var(--accent);
+}
+
+/* Filename preview */
+.filename-preview {
+    font-size: 0.75rem;
+    color: var(--muted-foreground);
+    margin-top: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    background-color: hsla(142, 76%, 36%, 0.1);
+    border-radius: 0.25rem;
+    border-left: 3px solid var(--accent);
+}
+
+.filename-preview strong {
+    color: var(--accent);
+}
+
+/* Scanner form specific */
+.scan-form {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

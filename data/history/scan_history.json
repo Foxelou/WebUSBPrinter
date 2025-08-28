@@ -1,0 +1,14 @@
+[
+    {
+        "timestamp": "2000-01-01 00:00:00",
+        "file": "exemple-scan_2000-01-01_00-00-00.jpg",
+        "status": "success",
+        "settings": {
+            "scanner": "MyScanner",
+            "resolution": 300,
+            "colorMode": "color",
+            "format": "jpeg",
+            "paperSize": "A4"
+        }
+    }
+]
