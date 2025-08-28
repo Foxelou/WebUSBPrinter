@@ -35,6 +35,7 @@
 </div>
 
 
+![plot](screens/dashboard.png)
 
 <!-- TABLE OF CONTENTS -->
 <details>

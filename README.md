@@ -49,6 +49,8 @@
   </p>
 </div>
 
+![plot](screens/dashboard.png)
+
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
